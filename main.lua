@@ -3,7 +3,7 @@ function love.load()
     startup()
 
     --editor:createMap({width = 0, height = 0, layers = 1, scale = 64})
-    --editor:loadTileset({sprite = love.graphics.newImage("tileset2.png"), scale = 64})
+    editor:loadTileset({sprite = love.graphics.newImage("tileset2.png"), scale = 64})
 
     cam.scale = 1
     editor.open = false
@@ -33,9 +33,6 @@ function love.keypressed(key)
 
     if key == "escape" then
         love.event.quit()
-    elseif key == "space" then
-        menu = home
-        exportMap(map)
     end
 end
 
