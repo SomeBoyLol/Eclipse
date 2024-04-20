@@ -36,7 +36,7 @@ info.maxwell = gui:create("image", {source = love.graphics.newImage("sprites/max
 
 gui:style({})
 editorGUI = gui:create("window", {})
-editorGUI.name = "editorGUI"
+editorGUI.editor = true
 require("editor/gui/assetmanager")
 require("editor/gui/topbar")
 require("editor/gui/titlebar")
